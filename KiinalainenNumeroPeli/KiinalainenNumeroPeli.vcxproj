@@ -24,6 +24,7 @@
     <ProjectGuid>{c1d0191a-67b7-4af3-aff2-340d2901a3cb}</ProjectGuid>
     <RootNamespace>KiinalainenNumeroPeli</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Teht_1_1-3</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

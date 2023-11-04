@@ -5,7 +5,7 @@ using namespace std;
 int DetermineRandomValue(int offset, int range)
 {
 	srand((unsigned)time(NULL));
-	int random = offset + (rand() % range);
+	int random = offset + (rand() % range + 1);
 	return random;
 }
 
