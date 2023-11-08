@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{00ef5f93-dfda-48b6-bbd0-9a10529fda51}</ProjectGuid>
-    <RootNamespace>SummaTesti</RootNamespace>
+    <ProjectGuid>{ba4528ad-373e-44a8-92d2-65b785331e6e}</ProjectGuid>
+    <RootNamespace>Teht31</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Teht_2_4</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

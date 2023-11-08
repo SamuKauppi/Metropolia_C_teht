@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{190bb362-93ef-4b68-afee-51faf5f65a2b}</ProjectGuid>
-    <RootNamespace>LakseKolmionPintaAla</RootNamespace>
+    <RootNamespace>LaskeKolmionPintaAla</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

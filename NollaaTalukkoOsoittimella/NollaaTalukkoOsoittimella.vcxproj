@@ -24,6 +24,7 @@
     <ProjectGuid>{24d4feaf-c376-449f-85e1-1d2a4f25dd47}</ProjectGuid>
     <RootNamespace>NollaaTalukkoOsoittimella</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Teht_2_5</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
