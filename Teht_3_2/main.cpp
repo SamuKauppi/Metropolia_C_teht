@@ -8,8 +8,7 @@ int* t;
 int* varaa_taulukko()
 {
 	int* taulukko = new int[n];
-	int* osoitin = taulukko;
-	return osoitin;
+	return taulukko;
 }
 
 void lue_arvot()

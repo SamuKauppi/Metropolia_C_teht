@@ -5,8 +5,7 @@ using namespace std;
 int* varaa_taulukko(int n)
 {
 	int* taulukko = new int[n];
-	int* osoitin = taulukko;
-	return osoitin;
+	return taulukko;
 }
 
 void lue_arvot(int* t, int n)
