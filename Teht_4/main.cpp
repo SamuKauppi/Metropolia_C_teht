@@ -66,13 +66,13 @@ void kokeilu()
 
 int DetermineRandomValue(int offset, int range)
 {
-	srand((unsigned)time(NULL));
 	int random = offset + (rand() % range + 1);
 	return random;
 }
 
 int main()
 {
+	srand((unsigned)time(NULL));
 	kokeilu();
 	string nimi = "ABC-";
 	list<Auto> kilpailijat{};
@@ -83,7 +83,7 @@ int main()
 		kilpailijat.push_back(tempAuto);
 	}
 
-	Auto* voittaja = 0;
+	Auto* voittaja = nullptr;
 	while (!voittaja)
 	{
 		for (auto& i : kilpailijat)
@@ -101,11 +101,11 @@ int main()
 	}
 
 	cout << "Voittaja loytyi!" << riviVaiht();
-	for (auto i : kilpailijat)
+	for (auto& i : kilpailijat)
 	{
 		cout << "Kilpailija " << i.palautaRekisteri() << " kulki " << i.palautaMatka() << riviVaiht();
 	}
-	cout << riviVaiht() << "Voittaja on: " << voittaja->palautaRekisteri();
+	cout << riviVaiht() << "Voittaja on: " << voittaja->palautaRekisteri() << riviVaiht();
 
 	return 0;
 }
