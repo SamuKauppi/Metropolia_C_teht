@@ -14,7 +14,7 @@ private:
 	double _matka;
 
 public:
-	Auto(string rekisteri, double huippuNopeus)
+	Auto(const string& rekisteri, double huippuNopeus)
 	{
 		_rekisteri = rekisteri;
 		_huippuNopeus = huippuNopeus;
@@ -31,17 +31,17 @@ public:
 		_matka += _nopeus * aika;
 	}
 
-	double palautaNopeus()
+	double palautaNopeus() const
 	{
 		return _nopeus;
 	}
 
-	string palautaRekisteri()
+	string palautaRekisteri() const
 	{
 		return _rekisteri;
 	}
 
-	double palautaMatka()
+	double palautaMatka() const
 	{
 		return _matka;
 	}
@@ -74,8 +74,11 @@ int main()
 {
 	srand((unsigned)time(NULL));
 	kokeilu();
+
+
 	string nimi = "ABC-";
-	list<Auto> kilpailijat{};
+	list<Auto> kilpailijat;
+
 	for (int i = 0; i < 10; i++)
 	{
 		double satunnainenNopeus = DetermineRandomValue(100, 200);
@@ -86,7 +89,7 @@ int main()
 	Auto* voittaja = nullptr;
 	while (!voittaja)
 	{
-		for (auto& i : kilpailijat)
+		for (Auto& i : kilpailijat)
 		{
 			double satunnainenNopeus = DetermineRandomValue(-10, 15);
 			i.kiihduta(satunnainenNopeus);
