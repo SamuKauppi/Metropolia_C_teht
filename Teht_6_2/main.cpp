@@ -6,6 +6,7 @@ class Laskutoimitus
 {
 public:
 	virtual double laske(double x, double y) = 0;
+	virtual ~Laskutoimitus() {}
 };
 
 class YhteenLasku : public Laskutoimitus
@@ -35,8 +36,12 @@ int main()
 	lasku = new YhteenLasku();
 	cout << lasku->laske(10, 10) << "\n";
 
+	delete lasku;
+
 	lasku = new KertoLasku();
 	cout << lasku->laske(10, 10) << "\n";
+
+	delete lasku;
 
 	return 0;
 }
