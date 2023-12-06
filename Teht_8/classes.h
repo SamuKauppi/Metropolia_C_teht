@@ -97,12 +97,6 @@ public:
     void addObject(GameObject* object) {
         _objects.push_back(object);
     }
-
-    ~Character() {
-        for (auto& obj : _objects) {
-            delete obj;
-        }
-    }
 };
 
 /// <summary>
@@ -173,19 +167,6 @@ public:
             delete object;
         }
     }
-
-    // Destructor
-    ~MapTile() {
-        // Deleting enemies
-        for (auto& enemy : _enemies) {
-            delete enemy;
-        }
-
-        // Deleting objects
-        for (auto& obj : _objects) {
-            delete obj;
-        }
-    }
 };
 
 /// <summary>
@@ -198,14 +179,4 @@ private:
 public:
     // Constructor
     GameMap(const vector<vector<MapTile>>& tiles) : _tiles(tiles) {}
-
-    // Destructor
-    ~GameMap() {
-        // Deleting map tiles
-        for (auto& row : _tiles) {
-            for (auto& tile : row) {
-                delete& tile;
-            }
-        }
-    }
 };
